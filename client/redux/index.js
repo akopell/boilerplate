@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
+import userReducer from './user';
 
-const appReducer = (state = {}, action) => {
-  return state;
-};
-// const appReducer = combineReducers({});
+const appReducer = combineReducers({
+  user: userReducer,
+});
 
 export default appReducer;
